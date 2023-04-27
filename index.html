@@ -4,8 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Finance Ledger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./dist//css/main.min.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo-container">
+          <a class="logo" href="http://index.html">
+            <img src="./images/logo.png" alt="logo" width="39" height="30" />
+          </a>
+          <p class="logo-white-text"><span class="logo-text">Finance</span> Ledger</p>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a class="nav-item" href="#home"> Home </a></li>
+            <li><a class="nav-item" href="#about"> About </a></li>
+            <li><a class="nav-item" href="#cases"> Cases </a></li>
+            <li><a class="nav-item" href="#blog"> Blog </a></li>
+            <li><a class="nav-item" href="#contact"> Contact </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-btn-container">
+          <h1 class="hero-title">
+            The Sky Is<br />
+            The Limit
+          </h1>
+          <p class="hero-text">
+            We provide world class<br />
+            financial assistance
+          </p>
+          <button type="button" class="hero-btn">
+            <img src="./images/gallery/next.png" alt="logo" width="17" height="21" />Read More
+          </button>
+        </div>
+      </section>
+      <section class="section" id="about"><div class="container"></div></section>
+      <section class="section" id="cases"><div class="container"></div></section>
+      <section class="section" id="blog"><div class="container"></div></section>
+      <section class="section" id="contact"><div class="container"></div></section>
+    </main>
+    <script src="./js/header.js"></script>
+  </body>
 </html>
