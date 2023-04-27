@@ -1,4 +1,6 @@
 {
+  "name": "finance-ledger",
+  "homepage": "https://irynashashko.github.io/finance-ledger/",
   "dependencies": {
     "parcel": "^2.8.3",
     "sass": "^1.62.1"
