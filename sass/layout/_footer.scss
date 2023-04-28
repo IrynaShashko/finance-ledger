@@ -1,1 +1,36 @@
+.footer {
+  background-color: #333333;
+  padding: 20px 15px;
+}
 
+.footer-icon {
+  width: 35px;
+  height: 35px;
+  fill: #fff;
+  &:hover {
+    fill: #28a745;
+  }
+}
+
+.footer-icon-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.footer-icon-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.footer-text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
