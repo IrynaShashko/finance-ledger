@@ -76,6 +76,9 @@
     filter: brightness(120%);
   }
   @include tab {
+    position: fixed;
+    top: 8px;
+    left: 24px;
     margin-right: 63px;
     margin-bottom: 0;
   }
