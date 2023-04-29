@@ -14,6 +14,13 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simplelightbox.min.css"
+      integrity="sha512-n+z8bAX+1nU6zKU6fAnYZVEpqj9y1m0sJvUhM0Wk8d2QKmqJgSV0+0EjsWY+/YX9NpvOx/q1QvHkRbV8a/XXxA=="
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.js"></script>
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./dist//css/main.min.css" />
@@ -81,35 +88,35 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
               </p>
             </div>
-            <div class="cases-grid-container">
+            <div id="galery" class="cases-grid-container">
               <div class="photo1">
-                <a href="./images/cases/cases1.jpg" data-lightbox="roadtrip" data-title="My caption">
-                  <img class="lightbox" src="./images/cases/cases1.jpg" alt="cases1" />
+                <a href="./images/cases/cases1.jpg">
+                  <img src="./images/cases/cases1.jpg" alt="cases1" />
                 </a>
               </div>
               <div class="photo2">
-                <a href="./images/cases/cases3.jpg" data-lightbox="roadtrip" data-title="My caption">
-                  <img class="lightbox" src="./images/cases/cases3.jpg" alt="cases1" />
+                <a href="./images/cases/cases3.jpg">
+                  <img src="./images/cases/cases3.jpg" alt="cases1" />
                 </a>
               </div>
               <div class="photo3">
-                <a href="./images/cases/cases5.jpg" data-lightbox="image-3" data-title="My caption">
-                  <img class="lightbox" src="./images/cases/cases5.jpg" alt="cases1" />
+                <a href="./images/cases/cases5.jpg">
+                  <img src="./images/cases/cases5.jpg" alt="cases1" />
                 </a>
               </div>
               <div class="photo4">
-                <a href="./images/cases/cases7.jpg" data-lightbox="image-4" data-title="My caption">
-                  <img class="lightbox" src="./images/cases/cases7.jpg" alt="cases1" />
+                <a href="./images/cases/cases7.jpg">
+                  <img src="./images/cases/cases7.jpg" alt="cases1" />
                 </a>
               </div>
               <div class="photo5">
-                <a href="./images/cases/cases2.jpg" data-lightbox="image-5" data-title="My caption">
-                  <img class="lightbox" src="./images/cases/cases2.jpg" alt="cases1" />
+                <a href="./images/cases/cases2.jpg">
+                  <img src="./images/cases/cases2.jpg" alt="cases1" />
                 </a>
               </div>
               <div class="photo6">
-                <a href="./images/cases/cases4.jpg" data-lightbox="image-1" data-title="My caption">
-                  <img class="lightbox" src="./images/cases/cases4.jpg" alt="cases1" />
+                <a href="./images/cases/cases4.jpg">
+                  <img src="./images/cases/cases4.jpg" alt="cases1" />
                 </a>
               </div>
             </div>
@@ -271,8 +278,6 @@
     </main>
     <script src="./js/header.js"></script>
     <script src="path/to/lightbox.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    </script>
-    <!-- <script src="./js/lightbox.js"></script> -->
+    <script src="./js/lightbox.js" type="module"></script>
   </body>
 </html>
