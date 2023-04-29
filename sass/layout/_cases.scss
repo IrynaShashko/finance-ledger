@@ -1,5 +1,12 @@
-.cases {
+.cases-container {
   padding: 56px 15px 40px 15px;
+}
+
+.cases-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cases-pre-title {
@@ -11,6 +18,10 @@
   text-align: center;
   color: #333333;
   margin-bottom: 16px;
+  @include tab {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .cases-title {
@@ -22,6 +33,12 @@
   text-align: center;
   color: #333333;
   margin-bottom: 24px;
+  width: 219px;
+  @include tab {
+    font-size: 32px;
+    line-height: 44px;
+    width: 284px;
+  }
 }
 
 .cases-text {
@@ -35,9 +52,14 @@
   width: 207px;
   margin: 0 auto;
   margin-bottom: 30px;
+  @include tab {
+    font-size: 18px;
+    line-height: 25px;
+    width: 645px;
+  }
 }
 
-.cases-container {
+.cases-grid-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -50,6 +72,14 @@
     'photo4'
     'photo5'
     'photo6';
+  @include tab {
+    gap: 18px 18px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'photo1 photo2 photo3'
+      'photo4 photo5 photo6';
+  }
 }
 
 .photo1 {
@@ -74,4 +104,33 @@
 
 .photo6 {
   grid-area: photo6;
+}
+
+/* Сховати модальне вікно за замовчуванням */
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Стилі для зображення */
+#lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 50px;
+}
+
+/* Стилі для кнопки закриття */
+#close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
 }
