@@ -2,6 +2,41 @@
   background-color: #28a745;
   height: 562px;
   padding: 79px 15px;
+  @include tab {
+    width: 400px;
+    height: 589px;
+  }
+  @include desk {
+    width: 690px;
+    height: 460px;
+  }
+}
+
+.about-container {
+  @include tab {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.about-image-container {
+  @include tab {
+    width: 368px;
+    height: 589px;
+    overflow: hidden;
+  }
+  @include desk {
+    width: 670px;
+    height: 460px;
+  }
+}
+
+.about-image {
+  @include tab {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .about-pre-title {
@@ -22,6 +57,15 @@
   line-height: 44px;
   color: #ffffff;
   margin-bottom: 24px;
+  width: 280px;
+  @include tab {
+    width: 236px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @include desk {
+    width: 562px;
+  }
 }
 
 .about-text {
@@ -31,7 +75,17 @@
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+  margin-right: 0;
   margin-bottom: 24px;
+  width: 280px;
+  @include tab {
+    width: 336px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @include desk {
+    width: 642px;
+  }
 }
 
 .about-btn {

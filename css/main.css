@@ -48,22 +48,22 @@ img {
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
 }
 @media screen and (min-width: 320px) {
   .container {
-    width: 290px;
+    width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1360px) {
   .container {
-    width: 1330px;
+    width: 1360px;
   }
 }
 
@@ -337,6 +337,48 @@ img {
   height: 562px;
   padding: 79px 15px;
 }
+@media screen and (min-width: 768px) {
+  .about {
+    width: 400px;
+    height: 589px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .about {
+    width: 690px;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-image-container {
+    width: 368px;
+    height: 589px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .about-image-container {
+    width: 670px;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 .about-pre-title {
   font-family: "Open Sans";
@@ -356,6 +398,19 @@ img {
   line-height: 44px;
   color: #ffffff;
   margin-bottom: 24px;
+  width: 280px;
+}
+@media screen and (min-width: 768px) {
+  .about-title {
+    width: 236px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .about-title {
+    width: 562px;
+  }
 }
 
 .about-text {
@@ -365,7 +420,21 @@ img {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+  margin-right: 0;
   margin-bottom: 24px;
+  width: 280px;
+}
+@media screen and (min-width: 768px) {
+  .about-text {
+    width: 336px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .about-text {
+    width: 642px;
+  }
 }
 
 .about-btn {
