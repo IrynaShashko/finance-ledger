@@ -12,8 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.13.0/simple-lightbox.min.css" integrity="sha512-74F0rBF7EW+3OTwz2fa2b9sGBEPSe4orL76WxHMnuVtlYF9h2+WiycMvMWn+nC0SZ5sNcIzhbBHiNneZ6f8ZFQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./style/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="./dist//css/main.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -80,33 +81,33 @@
             </div>
             <div id="gallery" class="cases-grid-container">
               <div class="photo1  gallery__item">
-                <a class="gallery__link" data-lightbox="gallery" href="./images/cases/cases1.jpg">
+                <a href="./images/cases/cases1.jpg" data-lightbox="roadtrip">
                   <img class="gallery__image" src="./images/cases/cases1.jpg" alt="cases1" />
                 </a>
               </div>
               <div class="photo2 gallery__item">
-                <a class="gallery__link" data-lightbox="gallery" href="./images/cases/cases3.jpg">
+                <a href="./images/cases/cases3.jpg" data-lightbox="roadtrip">
                   <img class="gallery__image" src="./images/cases/cases3.jpg" alt="cases1" />
                 </a>
               </div>
               <div class="photo3 gallery__item">
-                <a class="gallery__link" data-lightbox="gallery" href="./images/cases/cases5.jpg">
+                <a href="./images/cases/cases5.jpg" data-lightbox="roadtrip">
                   <img class="gallery__image" src="./images/cases/cases5.jpg" alt="cases1" />
                 </a>
               </div>
               <div class="photo4">
-                <a data-lightbox="gallery" href="./images/cases/cases7.jpg">
-                  <img src="./images/cases/cases7.jpg" alt="cases1" />
+                <a href="./images/cases/cases7.jpg" data-lightbox="roadtrip">
+                  <img class="gallery__image" src="./images/cases/cases7.jpg" alt="cases1" />
                 </a>
               </div>
               <div class="photo5">
-                <a data-lightbox="gallery" href="./images/cases/cases2.jpg">
-                  <img src="./images/cases/cases2.jpg" alt="cases1" />
+                <a href="./images/cases/cases2.jpg" data-lightbox="roadtrip">
+                  <img class="gallery__image" src="./images/cases/cases2.jpg" alt="cases1" />
                 </a>
               </div>
               <div class="photo6">
-                <a data-lightbox="gallery" href="./images/cases/cases4.jpg">
-                  <img src="./images/cases/cases4.jpg" alt="cases1" />
+                <a href="./images/cases/cases4.jpg" data-lightbox="roadtrip">
+                  <img class="gallery__image" src="./images/cases/cases4.jpg" alt="cases1" />
                 </a>
               </div>
             </div>
@@ -270,7 +271,7 @@
       </footer>
     </main>
     <script src="./js/header.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.13.0/simple-lightbox.js" integrity="sha512-QQGeK+T+FKyehHkJmxXKeX3IO5eo4pA/kh9u0iOk5Et6z50q3b6UCS1MVqdTpR/yt8RebXmrBDY7fsYxmCLX+A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/lightbox.js" ></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <!-- <script src="./js/lightbox.js" ></script> -->
   </body>
 </html>
