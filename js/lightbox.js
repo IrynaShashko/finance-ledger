@@ -1,11 +1,10 @@
 import SimpleLightbox from 'simplelightbox';
+const imgContainer = document.querySelector('#gallery div a');
 
-// const galery = document.querySelector('#galery div a');
-
-const gallery = new SimpleLightbox('#galery div a', {
+const gallery = new SimpleLightbox('#gallery div a', {
   caption: true,
   captionDelay: 250,
   captionsData: 'alt',
-  nav: true,
-  navText: ['&lsaquo', 'rsaquo'],
 });
+
+imgContainer.addEventListener('click', gallery);
