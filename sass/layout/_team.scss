@@ -1,5 +1,9 @@
 .team-text-container {
   padding: 72px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-pre-title {
@@ -11,6 +15,10 @@
   text-align: center;
   color: #333333;
   margin-bottom: 16px;
+  @include tab {
+    font-size: 20px;
+    line-height: 33px;
+  }
 }
 
 .team-title {
@@ -22,6 +30,12 @@
   text-align: center;
   color: #333333;
   margin-bottom: 24px;
+  width: 280px;
+  @include tab {
+    font-size: 40px;
+    line-height: 54px;
+    width: 428px;
+  }
 }
 
 .team-text {
@@ -33,6 +47,12 @@
   text-align: center;
   color: #333333;
   margin-bottom: 63px;
+  width: 280px;
+  @include tab {
+    font-size: 18px;
+    line-height: 25px;
+    width: 640px;
+  }
 }
 
 .team-grid-container {
@@ -50,11 +70,23 @@
     'text3';
   justify-content: center;
   align-items: center;
+  padding: 0 15px;
+  @include tab {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 16px 18px;
+    grid-template-areas:
+      'photo1 photo2 photo3'
+      'text1 text2 text3';
+  }
 }
 
 .photo1 {
   grid-area: photo1;
   position: relative;
+
   // transition: transform 0.3s ease-out;
   // max-width: 100%;
   // height: auto;
@@ -69,6 +101,7 @@
   height: auto;
   display: block;
   transition: transform 0.3s ease-out;
+  object-fit: contain;
 }
 
 .image:hover img {

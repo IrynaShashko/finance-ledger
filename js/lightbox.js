@@ -1,5 +1,5 @@
 import SimpleLightbox from 'simplelightbox';
-const imgContainer = document.querySelector('#gallery div a');
+const imgContainer = document.querySelector('#gallery');
 
 const gallery = new SimpleLightbox('#gallery div a', {
   caption: true,
