@@ -94,11 +94,6 @@ img {
     align-items: center;
   }
 }
-@media screen and (min-width: 1360px) {
-  .header-container {
-    height: 768px;
-  }
-}
 
 .header.is-scrolling {
   background-color: rgba(0, 0, 0, 0.8);

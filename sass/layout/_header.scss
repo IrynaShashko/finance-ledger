@@ -19,9 +19,6 @@
     display: inline-flex;
     align-items: center;
   }
-  @include desk {
-    height: 768px;
-  }
 }
 
 .header.is-scrolling {
