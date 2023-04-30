@@ -86,11 +86,18 @@ img {
 
 .header-container {
   padding: 25px 24px;
+  height: 533px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .header-container {
     display: inline-flex;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .header-container {
+    height: 768px;
   }
 }
 
@@ -193,6 +200,11 @@ img {
     margin-right: 20px;
   }
 }
+@media screen and (min-width: 1360px) {
+  .nav-list-item:not(:last-child) {
+    margin-right: 46px;
+  }
+}
 .nav-list-item:hover::after {
   content: "";
   background: #28a745;
@@ -229,9 +241,11 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   height: 533px;
-  width: 100vw;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .hero {

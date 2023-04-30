@@ -14,9 +14,14 @@
 
 .header-container {
   padding: 25px 24px;
+  height: 533px;
+  width: 100%;
   @include tab {
     display: inline-flex;
     align-items: center;
+  }
+  @include desk {
+    height: 768px;
   }
 }
 
@@ -106,6 +111,9 @@
     margin-right: 12px;
     @include tab {
       margin-right: 20px;
+    }
+    @include desk {
+      margin-right: 46px;
     }
   }
   &:hover::after {
