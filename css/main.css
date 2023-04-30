@@ -73,7 +73,6 @@ img {
   top: 0;
   left: 0;
   height: 120px;
-  padding: 10px 24px;
   background-color: rgba(3, 3, 3, 0);
   transition: background-color 0.3s ease, opacity 0.3s ease;
   z-index: 1000;
