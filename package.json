@@ -1,14 +1,11 @@
 {
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build:html": "parcel build src/*.html"
   },
   "dependencies": {
     "jquery": "^3.6.4",
-    "parcel": "^2.8.3",
+    "parcel-bundler": "^1.12.5",
     "sass": "^1.62.1"
-  },
-  "devDependencies": {
-    "posthtml": "^0.16.6",
-    "posthtml-include": "^1.7.4"
   }
 }
