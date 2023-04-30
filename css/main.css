@@ -338,6 +338,7 @@ img {
   align-items: center;
   margin: 0 auto;
   z-index: 2;
+  cursor: pointer;
 }
 .hero-btn:hover {
   border-color: #2ebf4f;
@@ -467,6 +468,7 @@ img {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+  cursor: pointer;
 }
 .about-btn:hover {
   background: #f4f4f4;
@@ -748,6 +750,7 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #ffffff;
+  cursor: pointer;
 }
 .blog-btn:hover {
   background-color: #f4f4f4;
@@ -1060,6 +1063,7 @@ img {
   border-radius: 5px;
   margin-top: 24px;
   color: #ffffff;
+  cursor: pointer;
 }
 .form-btn:hover {
   background-color: #2ebf4f;
