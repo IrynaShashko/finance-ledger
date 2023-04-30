@@ -1,9 +1,31 @@
+.team-container {
+  padding: 0 20px;
+  @include tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.team-card {
+  width: 280px;
+  @include tab {
+    width: 223px;
+  }
+  @include desk {
+    width: 420px;
+  }
+}
+
 .team-text-container {
   padding: 72px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include tab {
+    padding-bottom: 24px;
+  }
 }
 
 .team-pre-title {
@@ -32,7 +54,7 @@
   margin-bottom: 24px;
   width: 280px;
   @include tab {
-    font-size: 400px;
+    font-size: 40px;
     line-height: 54px;
     width: 428px;
   }
@@ -46,7 +68,6 @@
   line-height: 22px;
   text-align: center;
   color: #333333;
-  margin-bottom: 63px;
   width: 280px;
   @include tab {
     font-size: 18px;
@@ -55,45 +76,23 @@
   }
 }
 
-.team-grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    'photo1'
-    'text1'
-    'photo2'
-    'text2'
-    'photo3'
-    'text3';
-  justify-content: center;
-  align-items: center;
-  padding: 0 15px;
+.text-container {
+  padding: 16px 0px 30px 0px;
+}
+
+.photo {
+  position: relative;
+  width: 280px;
   @include tab {
-    width: 768px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr;
-    gap: 16px 18px;
-    grid-template-areas:
-      'photo1 photo2 photo3'
-      'text1 text2 text3';
+    width: 223px;
+  }
+  @include desk {
+    width: 420px;
   }
 }
 
-.photo1 {
-  grid-area: photo1;
-  position: relative;
-
-  // transition: transform 0.3s ease-out;
-  // max-width: 100%;
-  // height: auto;
-}
-
-.photo1:hover .overlay {
-  opacity: 1;
+.photo:hover .overlay {
+  opacity: 0.7;
 }
 
 .image img {
@@ -102,11 +101,18 @@
   display: block;
   transition: transform 0.3s ease-out;
   object-fit: contain;
+  @include tab {
+    max-width: 223px;
+  }
+  @include desk {
+    max-width: 420px;
+  }
 }
 
 .image:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -128,38 +134,7 @@
   }
 }
 
-.text1 {
-  grid-area: text1;
-  margin: 0 auto;
-}
-
-.photo2 {
-  position: relative;
-  grid-area: photo2;
-  &:hover .overlay {
-    opacity: 1;
-  }
-}
-
-.text2 {
-  grid-area: text2;
-  margin: 0 auto;
-}
-
-.photo3 {
-  position: relative;
-  grid-area: photo3;
-  &:hover .overlay {
-    opacity: 1;
-  }
-}
-
-.text3 {
-  grid-area: text3;
-  margin: 0 auto;
-}
-
-.team-title {
+.team-person-title {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;

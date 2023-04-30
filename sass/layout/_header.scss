@@ -6,7 +6,7 @@
   background-color: rgba(3, 3, 3, 0);
   transition: background-color 0.3s ease, opacity 0.3s ease;
   z-index: 1000;
-  width: 768px;
+  width: 100vw;
   @include tab {
     height: 70px;
   }

@@ -76,7 +76,7 @@ img {
   background-color: rgba(3, 3, 3, 0);
   transition: background-color 0.3s ease, opacity 0.3s ease;
   z-index: 1000;
-  width: 768px;
+  width: 100vw;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -221,7 +221,7 @@ img {
   position: relative;
   display: inline-block;
   padding: 160px 0px 130px 0px;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home/showcase.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/home/showcase.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -616,9 +616,40 @@ img {
   background-color: #0284d0;
   padding: 48px 15px;
 }
+@media screen and (min-width: 768px) {
+  .blog {
+    width: 400px;
+    padding: 58px 0px 58px 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog-container {
+    height: 493px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.blog-image-container {
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .blog-image-container {
+    width: 368px;
+  }
+}
 
 .blog-image {
   width: 100vw;
+}
+@media screen and (min-width: 768px) {
+  .blog-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
 }
 
 .blog-pre-title {
@@ -630,6 +661,12 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .blog-pre-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
 
 .blog-title {
   font-family: "Open Sans";
@@ -640,6 +677,12 @@ img {
   color: #ffffff;
   margin-bottom: 24px;
 }
+@media screen and (min-width: 768px) {
+  .blog-title {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
 
 .blog-text {
   font-family: "Open Sans";
@@ -649,6 +692,13 @@ img {
   line-height: 22px;
   color: #ffffff;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .blog-text {
+    width: 336px;
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .blog-btn {
@@ -670,12 +720,42 @@ img {
   border-color: #0284d0;
 }
 
+.team-container {
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .team-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.team-card {
+  width: 280px;
+}
+@media screen and (min-width: 768px) {
+  .team-card {
+    width: 223px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .team-card {
+    width: 420px;
+  }
+}
+
 .team-text-container {
   padding: 72px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .team-text-container {
+    padding-bottom: 24px;
+  }
 }
 
 .team-pre-title {
@@ -708,7 +788,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .team-title {
-    font-size: 400px;
+    font-size: 40px;
     line-height: 54px;
     width: 428px;
   }
@@ -722,7 +802,6 @@ img {
   line-height: 22px;
   text-align: center;
   color: #333333;
-  margin-bottom: 63px;
   width: 280px;
 }
 @media screen and (min-width: 768px) {
@@ -733,35 +812,27 @@ img {
   }
 }
 
-.team-grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "photo1" "text1" "photo2" "text2" "photo3" "text3";
-  justify-content: center;
-  align-items: center;
-  padding: 0 15px;
+.text-container {
+  padding: 16px 0px 30px 0px;
+}
+
+.photo {
+  position: relative;
+  width: 280px;
 }
 @media screen and (min-width: 768px) {
-  .team-grid-container {
-    width: 768px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr;
-    gap: 16px 18px;
-    grid-template-areas: "photo1 photo2 photo3" "text1 text2 text3";
+  .photo {
+    width: 223px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .photo {
+    width: 420px;
   }
 }
 
-.photo1 {
-  grid-area: photo1;
-  position: relative;
-}
-
-.photo1:hover .overlay {
-  opacity: 1;
+.photo:hover .overlay {
+  opacity: 0.7;
 }
 
 .image img {
@@ -772,9 +843,19 @@ img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (min-width: 768px) {
+  .image img {
+    max-width: 223px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .image img {
+    max-width: 420px;
+  }
+}
 
 .image:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .overlay {
@@ -798,38 +879,7 @@ img {
   opacity: 0.6;
 }
 
-.text1 {
-  grid-area: text1;
-  margin: 0 auto;
-}
-
-.photo2 {
-  position: relative;
-  grid-area: photo2;
-}
-.photo2:hover .overlay {
-  opacity: 1;
-}
-
-.text2 {
-  grid-area: text2;
-  margin: 0 auto;
-}
-
-.photo3 {
-  position: relative;
-  grid-area: photo3;
-}
-.photo3:hover .overlay {
-  opacity: 1;
-}
-
-.text3 {
-  grid-area: text3;
-  margin: 0 auto;
-}
-
-.team-title {
+.team-person-title {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
