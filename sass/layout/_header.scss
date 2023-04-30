@@ -13,6 +13,7 @@
 }
 
 .header-container {
+  padding: 25px 24px;
   @include tab {
     display: inline-flex;
     align-items: center;

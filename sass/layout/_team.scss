@@ -143,6 +143,10 @@
   text-align: center;
   color: #333333;
   margin-bottom: 8px;
+  @include tab {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .team-person-text {
@@ -153,4 +157,8 @@
   line-height: 22px;
   text-align: center;
   color: #333333;
+  @include tab {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }

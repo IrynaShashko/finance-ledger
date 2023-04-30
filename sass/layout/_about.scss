@@ -10,7 +10,6 @@
   }
   @include desk {
     width: 690px;
-    height: 460px;
   }
 }
 
@@ -19,6 +18,9 @@
     height: 589px;
     display: flex;
     flex-direction: row;
+  }
+  @include desk {
+    height: 460px;
   }
 }
 

@@ -6,6 +6,10 @@
     width: 400px;
     padding: 58px 0px 58px 32px;
   }
+  @include desk {
+    width: 690px;
+    padding: 80px 0px 80px 32px;
+  }
 }
 
 .blog-container {
@@ -13,6 +17,11 @@
     height: 493px;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  @include desk {
+    height: 460px;
   }
 }
 
@@ -21,6 +30,9 @@
   overflow: hidden;
   @include tab {
     width: 368px;
+  }
+  @include desk {
+    width: 670px;
   }
 }
 
@@ -72,6 +84,9 @@
     width: 336px;
     font-size: 18px;
     line-height: 25px;
+  }
+  @include desk {
+    width: 642px;
   }
 }
 
