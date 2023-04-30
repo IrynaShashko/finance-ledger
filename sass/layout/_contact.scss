@@ -1,10 +1,44 @@
+.contact-container {
+  @include tab {
+    height: 354px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+  @include desk {
+    height: 454px;
+    margin-bottom: 0;
+  }
+}
+
 .contact-form-container {
   background-color: #f4f4f4;
   padding: 51px 15px 25px 15px;
+  @include tab {
+    width: 400px;
+    padding: 31px 15px 25px 15px;
+  }
+  @include desk {
+    width: 690px;
+  }
+}
+
+.contact-image-container {
+  @include tab {
+    overflow: hidden;
+    width: 368px;
+  }
+  @include desk {
+    width: 670px;
+  }
 }
 
 .contact-image {
   width: 100vw;
+  @include tab {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .form-container {
@@ -29,6 +63,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include tab {
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 24px;
+  }
 }
 
 .form-input {
@@ -38,6 +77,14 @@
   border-radius: 5px;
   margin-bottom: 16px;
   padding: 16px 8px;
+  @include tab {
+    width: 336px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @include desk {
+    width: 642px;
+  }
 }
 
 .form-btn {
@@ -46,4 +93,12 @@
   background: #28a745;
   border-radius: 5px;
   margin-top: 24px;
+  color: #ffffff;
+  &:hover {
+    background-color: #2ebf4f;
+  }
+  @include tab {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
