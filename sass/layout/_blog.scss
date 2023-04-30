@@ -50,4 +50,9 @@
   font-size: 18px;
   line-height: 25px;
   color: #ffffff;
+  &:hover {
+    background-color: #f4f4f4;
+    color: #0284d0;
+    border-color: #0284d0;
+  }
 }

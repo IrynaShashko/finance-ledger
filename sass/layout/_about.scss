@@ -7,7 +7,6 @@
   padding: 79px 15px;
   @include tab {
     width: 400px;
-    height: 589px;
   }
   @include desk {
     width: 690px;
@@ -17,6 +16,7 @@
 
 .about-container {
   @include tab {
+    height: 589px;
     display: flex;
     flex-direction: row;
   }
@@ -25,7 +25,7 @@
 .about-image-container {
   @include tab {
     width: 368px;
-    height: 589px;
+    height: 100%;
     overflow: hidden;
   }
   @include desk {
@@ -102,7 +102,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  /* identical to box height */
-
   color: #ffffff;
+  &:hover {
+    background: #f4f4f4;
+    border-radius: 5px;
+    color: #28a745;
+    border-color: #28a745;
+  }
 }
