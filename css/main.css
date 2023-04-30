@@ -229,7 +229,6 @@ img {
 .hero {
   position: relative;
   display: inline-block;
-  padding: 160px 0px 130px 0px;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home/showcase.jpg);
   background-position: center;
   background-size: cover;
@@ -244,13 +243,11 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     height: 1024px;
-    padding: 378px 15px 130px 15px;
   }
 }
 @media screen and (min-width: 1360px) {
   .hero {
     height: 768px;
-    padding: 272px 15px 130px 15px;
   }
 }
 
