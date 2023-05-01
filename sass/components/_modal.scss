@@ -1,0 +1,76 @@
+#modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+#modal div {
+  background-color: #fff;
+  width: 200px;
+  margin: 10% auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  @include tab {
+    width: 350px;
+  }
+}
+
+#close-modal {
+  width: 155px;
+  height: 57px;
+  background: #28a745;
+  border-radius: 5px;
+  margin-top: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  &:hover {
+    background-color: #2ebf4f;
+  }
+  @include tab {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.show-modal {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #333333;
+  @include tab {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.modal-text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+  @include tab {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
