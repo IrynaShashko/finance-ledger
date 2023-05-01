@@ -1,11 +1,15 @@
 {
+  "name": "finance-ledger",
+  "version": "1.0.0",
   "scripts": {
     "start": "parcel index.html",
+    "build": "parcel build index.html",
     "build:html": "parcel build src/*.html"
   },
   "dependencies": {
     "jquery": "^3.6.4",
     "parcel-bundler": "^1.12.5",
+    "parcel-plugin-web-extension": "^1.6.1",
     "sass": "^1.62.1"
   }
 }

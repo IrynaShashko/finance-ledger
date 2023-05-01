@@ -151,7 +151,15 @@
         <div class="team-container">
             <div class="team-card">
               <div class="photo">
-              <div class="image"><img src="./images/team/person1.jpg" alt="John Doe" /></div>
+              <div class="image">
+                <picture>
+                  <source srcset="./images/team/person1.webp 1x, ./images/team/person1@2x.webp 2x" type="image/webp">
+                  <source 
+                    srcset="./images/team/person1.jpg 1x, ./images/team/person1@2x.jpg 2x"/>
+                    <img src="./images/team/person1.jpg" alt="John Doe" />
+                </picture>
+                <!-- <img src="./images/team/person1.jpg" alt="John Doe" /> -->
+              </div>
               <div class="overlay">
                 <a href="https://www.facebook.com">
                   <img class="icon" src="./images/gallery/facebook.svg" alt="facebook" />
