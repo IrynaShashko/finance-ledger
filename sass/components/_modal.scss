@@ -12,7 +12,7 @@
   background-color: #fff;
   width: 200px;
   margin: 10% auto;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   border-radius: 5px;
   @include tab {
@@ -55,6 +55,7 @@
   line-height: 27px;
   text-align: center;
   color: #333333;
+  margin-bottom: 24px;
   @include tab {
     font-size: 32px;
     line-height: 32px;

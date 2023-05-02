@@ -3,7 +3,6 @@ const submitButton = form.querySelector('button[type="submit"]');
 const input = form.querySelector('input[required]');
 const modal = document.getElementById('modal');
 
-// Perform validation
 const emailInput = form.querySelector('#email');
 const errorContainer = emailInput.nextElementSibling;
 
@@ -16,20 +15,17 @@ form.addEventListener('submit', function (event) {
   console.log('data', data);
 
   if (errorContainer) {
-    // використовуйте errorContainer
     if (!emailInput.validity.valid) {
       errorContainer.classList.remove('show');
       return;
     }
   } else {
-    // робіть щось інше, якщо немає наступного елемента
     return;
   }
 
-  // submit the form
-  form.submit();
   modal.classList.remove('hidden');
-  modal.classList.add('show');
+  modal.classList.add('show-modal');
+  form.reset();
 });
 
 if (email === '') {

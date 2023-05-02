@@ -82,7 +82,7 @@ img {
   background-color: #fff;
   width: 200px;
   margin: 10% auto;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   border-radius: 5px;
 }
@@ -129,6 +129,7 @@ img {
   line-height: 27px;
   text-align: center;
   color: #333333;
+  margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .modal-title {
@@ -229,6 +230,7 @@ img {
   margin-bottom: 16px;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: top left;
+  cursor: pointer;
 }
 .logo-container:hover {
   transform: scale(1.1);
@@ -315,6 +317,9 @@ img {
   position: relative;
   display: inline-block;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home/showcase.jpg);
+  background-image: -webkit-image-set(linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home/showcase.jpg) 1x, url(../../images/home/showcase@2x.jpg) 2x);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), -webkit-image-set(url(../../images/home/showcase.webp) 1x, url(../../images/home/showcase@2x.webp) 2x);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-set(url(../../images/home/showcase.webp) 1x, url(../../images/home/showcase@2x.webp) 2x);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
