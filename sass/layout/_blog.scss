@@ -1,3 +1,10 @@
+#blog {
+  scroll-margin-top: 120px;
+  @include tab {
+    scroll-margin-top: 70px;
+  }
+}
+
 .blog {
   background-color: #0284d0;
   // height: 466px;

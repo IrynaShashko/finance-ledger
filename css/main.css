@@ -34,7 +34,6 @@ a {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .hidden {
@@ -187,9 +186,10 @@ img {
 }
 
 .logo {
-  margin-right: 8px;
-  width: 39;
-  height: 30;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-text {
@@ -199,7 +199,7 @@ img {
   font-size: 28px;
   line-height: 38px;
   color: #28a745;
-  margin-right: 8px;
+  margin-left: 8px;
 }
 @media screen and (min-width: 768px) {
   .logo-text {
@@ -224,23 +224,36 @@ img {
 }
 
 .logo-container {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 16px;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-origin: top left;
+  transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.logo-container:hover {
+.logo-container:hover .logo img {
   transform: scale(1.1);
 }
+.logo-container:hover .logo-text {
+  font-size: 32px;
+}
+@media screen and (min-width: 768px) {
+  .logo-container:hover .logo-text {
+    font-size: 37px;
+  }
+}
 .logo-container:hover img {
-  filter: brightness(120%);
+  filter: brightness(90%);
 }
 .logo-container:hover p span {
+  filter: brightness(90%);
   font-size: 32px;
-  filter: brightness(120%);
+}
+@media screen and (min-width: 768px) {
+  .logo-container:hover p span {
+    font-size: 37px;
+  }
 }
 @media screen and (min-width: 768px) {
   .logo-container {
@@ -316,10 +329,10 @@ img {
 .hero {
   position: relative;
   display: inline-block;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home/showcase.jpg);
-  background-image: -webkit-image-set(linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home/showcase.jpg) 1x, url(../../images/home/showcase@2x.jpg) 2x);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), -webkit-image-set(url(../../images/home/showcase.webp) 1x, url(../../images/home/showcase@2x.webp) 2x);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-set(url(../../images/home/showcase.webp) 1x, url(../../images/home/showcase@2x.webp) 2x);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/home/showcase.jpg);
+  background-image: -webkit-image-set(linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/home/showcase.jpg) 1x, url(../../images/home/showcase@2x.jpg) 2x);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), -webkit-image-set(url(../../images/home/showcase.webp) 1x, url(../../images/home/showcase@2x.webp) 2x);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), image-set(url(../../images/home/showcase.webp) 1x, url(../../images/home/showcase@2x.webp) 2x);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -432,6 +445,15 @@ img {
 }
 .hero-btn:hover {
   border-color: #2ebf4f;
+}
+
+#about {
+  scroll-margin-top: 120px;
+}
+@media screen and (min-width: 768px) {
+  #about {
+    scroll-margin-top: 70px;
+  }
 }
 
 .about {
@@ -565,6 +587,15 @@ img {
   border-radius: 5px;
   color: #28a745;
   border-color: #28a745;
+}
+
+#cases {
+  scroll-margin-top: 120px;
+}
+@media screen and (min-width: 768px) {
+  #cases {
+    scroll-margin-top: 70px;
+  }
 }
 
 .cases-container {
@@ -714,6 +745,15 @@ img {
 
 .gallery__link:hover {
   cursor: zoom-in;
+}
+
+#blog {
+  scroll-margin-top: 120px;
+}
+@media screen and (min-width: 768px) {
+  #blog {
+    scroll-margin-top: 70px;
+  }
 }
 
 .blog {
@@ -1049,6 +1089,15 @@ img {
   .team-person-text {
     font-size: 18px;
     line-height: 25px;
+  }
+}
+
+#contact {
+  scroll-margin-top: 120px;
+}
+@media screen and (min-width: 768px) {
+  #contact {
+    scroll-margin-top: 70px;
   }
 }
 

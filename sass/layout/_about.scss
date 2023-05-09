@@ -1,3 +1,10 @@
+#about {
+  scroll-margin-top: 120px;
+  @include tab {
+    scroll-margin-top: 70px;
+  }
+}
+
 .about {
   width: 100vw;
 }

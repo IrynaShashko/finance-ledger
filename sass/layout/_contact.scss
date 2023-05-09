@@ -1,3 +1,10 @@
+#contact {
+  scroll-margin-top: 120px;
+  @include tab {
+    scroll-margin-top: 70px;
+  }
+}
+
 .contact-container {
   @include tab {
     height: 354px;
