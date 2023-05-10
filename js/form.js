@@ -1,20 +1,20 @@
-const form = document.querySelector('#my-form');
+// const form = document.querySelector('#my-form');
 
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  const formData = new FormData(form);
+// form.addEventListener('submit', function (event) {
+//   event.preventDefault();
+//   const formData = new FormData(form);
 
-  // fetch('/', {
-  //   method: 'POST',
-  //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //   body: formData,
-  // })
-  //   .then(() => console.log('Form successfully submitted'))
-  //   .catch(error => alert(error));
+//   // fetch('/', {
+//   //   method: 'POST',
+//   //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+//   //   body: formData,
+//   // })
+//   //   .then(() => console.log('Form successfully submitted'))
+//   //   .catch(error => alert(error));
 
-  // Очистити форму після відправки
-  form.reset();
-});
+//   // Очистити форму після відправки
+//   form.reset();
+// });
 
 // const form = document.querySelector('#my-form');
 // const submitButton = form.querySelector('button[type="submit"]');

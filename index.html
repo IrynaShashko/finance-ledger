@@ -295,7 +295,13 @@
         <div class="contact-form-container">
           <div class="form-container">
             <h2 class="form-title">Request Callback</h2>
-            <form id="my-form" class="form" name="request-callback-form" autocomplete="off" method="POST"  netlify>
+            <form id="my-form" 
+            class="form" 
+            name="request" 
+            autocomplete="off" 
+            method="POST" 
+            data-netlify="true"
+            onSubmit="submit">
               <label class="form-label">
                 <input class="form-input" name="name" type="name" placeholder="Enter your name" />
               </label>
