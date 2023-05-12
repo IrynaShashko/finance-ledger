@@ -4,7 +4,7 @@ const errorContainer = input.nextElementSibling;
 
 // Add input event listener to show/hide error message
 input.addEventListener('input', function (event) {
-  if (event.target.value.trim() === '') {
+  if (event.target.value === '') {
     errorContainer.classList.remove('show');
   } else {
     errorContainer.classList.add('show');
@@ -20,14 +20,14 @@ form.addEventListener('submit', event => {
 
   // Remove input event listener
   input.removeEventListener('input', function (event) {
-    if (event.target.value.trim() === '') {
+    if (event.target.value === '') {
       errorContainer.classList.remove('show');
     } else {
       errorContainer.classList.add('show');
     }
   });
 
-  if (emailValue.match(emailRegex) && event.target.value.trim() !== '') {
+  if (emailValue.match(emailRegex)) {
     // Email format is valid, submit the form
     form.submit();
   } else {
