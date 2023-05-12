@@ -5,19 +5,19 @@ const input = form.querySelector('input[required]');
 const emailInput = form.querySelector('#email');
 const errorContainer = emailInput.nextElementSibling;
 
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  if (errorContainer) {
-    if (!emailInput.validity.valid) {
-      errorContainer.classList.remove('show');
-      return;
-    }
-  } else {
-    return;
-  }
+// form.addEventListener('submit', function (event) {
+//   event.preventDefault();
+//   if (errorContainer) {
+//     if (!emailInput.validity.valid) {
+//       errorContainer.classList.remove('show');
+//       return;
+//     }
+//   } else {
+//     return;
+//   }
 
-  //   form.reset();
-});
+//   //   form.reset();
+// });
 
 if (email === '') {
   console.log(email);
