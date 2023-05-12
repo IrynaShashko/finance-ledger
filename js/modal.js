@@ -1,4 +1,4 @@
-const modal = document.getElementById('modal');
+const modal = document.querySelector('.modal-btn');
 
 modal.addEventListener('click', function (event) {
   window.location.href = '/';
