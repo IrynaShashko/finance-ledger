@@ -295,7 +295,7 @@
         <div class="contact-form-container">
           <div class="form-container">
             <h2 class="form-title">Request Callback</h2>
-            <form id="my-form" class="form" name="contact" netlify>
+            <form action="/partials/success.html" id="my-form" class="form" name="contact" netlify>
               <label class="form-label">
                 <input class="form-input" name="name" type="text" placeholder="Enter your name" />
               </label>
@@ -310,13 +310,6 @@
               </label>
               <button class="form-btn" type="submit">Send</button>
             </form>
-              <div id="modal" class="hidden">
-              <div>
-                <h2 class="modal-title">Thank you for your submission!</h2>
-                <p class="modal-text">We will be in touch with you soon.</p>
-                <button class="modal-btn" id="close-modal">Close</button>
-              </div>
-            </div>
           </div>
           </div>
           </div>
@@ -368,7 +361,7 @@
     </main>
     <script src="./js/header.js" type="module"></script>
     <script src="./js/form.js" type="module"></script>
-    <script src="./js/modal.js" type="module"></script>
+    
     <script src="./js/lightbox.js" type="module"></script>
   </body>
 </html>
