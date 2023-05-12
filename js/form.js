@@ -1,28 +1,41 @@
 const form = document.querySelector('#my-form');
-// const submitButton = form.querySelector('button[type="submit"]');
 const input = form.querySelector('input[required]');
+const errorContainer = input.nextElementSibling;
 
-// const emailInput = form.querySelector('#email');
-const errorContainer = emailInput.nextElementSibling;
-
-// form.addEventListener('submit', function (event) {
-//   event.preventDefault();
-//   if (errorContainer) {
-//     if (!emailInput.validity.valid) {
-//       errorContainer.classList.remove('show');
-//       return;
-//     }
-//   } else {
-//     return;
-//   }
-
-//   //   form.reset();
-// });
-
+// Add input event listener to show/hide error message
 input.addEventListener('input', function (event) {
   if (event.target.value.trim() === '') {
     errorContainer.classList.remove('show');
   } else {
     errorContainer.classList.add('show');
+  }
+});
+
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  const nameInput = form.querySelector('#name');
+  const emailInput = form.querySelector('#email');
+  const emailValue = emailInput.value;
+  const emailRegex = /\S+@\S+\.\S+/; // Regular expression to match email format
+
+  // Remove input event listener
+  input.removeEventListener('input', function (event) {
+    if (event.target.value.trim() === '') {
+      errorContainer.classList.remove('show');
+    } else {
+      errorContainer.classList.add('show');
+    }
+  });
+
+  if (emailValue.match(emailRegex) && event.target.value.trim() !== '') {
+    // Email format is valid, submit the form
+    form.submit();
+  } else {
+    errorContainer.classList.remove('show');
+    // Email format is not valid, display an error message
+    const error = document.createElement('p');
+    error.textContent = 'Please enter a valid email address';
+    error.style.color = 'red';
+    form.appendChild(error);
   }
 });
