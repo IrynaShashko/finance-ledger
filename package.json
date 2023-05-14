@@ -4,11 +4,13 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "build:html": "parcel build src/*.html"
+    "build:html": "parcel build src/*.html",
+    "babel": "babel src -d dist"
   },
   "dependencies": {
     "@parcel/service-worker": "^2.8.3",
     "jquery": "^3.6.4",
+    "lightbox2": "^2.11.4",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-web-extension": "^1.6.1",
     "sass": "^1.62.1"

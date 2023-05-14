@@ -1092,15 +1092,6 @@ img {
   }
 }
 
-#contact {
-  scroll-margin-top: 120px;
-}
-@media screen and (min-width: 768px) {
-  #contact {
-    scroll-margin-top: 70px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .contact-container {
     height: 354px;
