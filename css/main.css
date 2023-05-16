@@ -1057,6 +1057,7 @@ img {
 }
 .icon:hover {
   opacity: 0.6;
+  transform: scale(1.1);
 }
 
 .team-person-title {
@@ -1238,6 +1239,7 @@ img {
 }
 .footer-icon:hover {
   fill: #28a745;
+  transform: scale(1.1);
 }
 
 .footer-icon-list {
